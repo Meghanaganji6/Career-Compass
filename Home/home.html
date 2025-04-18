@@ -1,0 +1,97 @@
+<!-- Replace your existing home.html content with this -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Career Compass</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="home.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="header-container">
+      <h1 class="logo"><span>Career</span>Compass</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Career Paths</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Your Career Journey Starts Here 🚀</h2>
+      <p>Confused about what to do after 12th or B.Tech? Let Career Compass help you discover the right path for your future.</p>
+      <div class="buttons">
+        <button onclick="redirect('after10.html')">After 12th</button>
+        <button onclick="redirect('afterBtech.html')">After B.Tech</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features" id="features">
+    <h2 class="section-title">Why Choose Career Compass?</h2>
+    <div class="feature-cards">
+      <div class="feature-card">
+        <i class="fas fa-compass"></i>
+        <h3>Comprehensive Career Insights</h3>
+        <p>Offers detailed information about various career paths, including required qualifications, growth potential, and industry demand.</p>
+      </div>
+      <div class="feature-card">
+        <i class="fas fa-lightbulb"></i>
+        <h3>Stream Selection</h3>
+        <p>Get insights on what streams and courses to take after your current studies.</p>
+      </div>
+      <div class="feature-card">
+        <i class="fas fa-briefcase"></i>
+        <h3>Career Paths</h3>
+        <p>Explore various career options and understand job roles, salaries, and demand.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-left">
+        <h3>Career<span>Compass</span></h3>
+        <p>Visualize your success with a customizable goal.</p>
+        <p>&copy; 2025 Career Compass. All rights reserved.</p>
+        <div class="contact-footer" id="contact">
+            <h4>Contact Us</h4>
+            <p>Have questions? Get in touch with us for support.</p>
+            <button class="cta-button">Contact Support</button>
+        </div>
+    </div>
+
+    <div class="footer-center">
+        <h3>Follow Us</h3>
+        <div class="social-icons">
+            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="mailto:support@eduaiassist.com"><i class="fas fa-envelope"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </div>
+
+    <div class="footer-feedback">
+        <h3>Feedback</h3>
+        <p>We value your feedback! Let us know how we can improve.</p>
+        <textarea placeholder="Enter your feedback here..."></textarea>
+        <button class="cta-button">Submit</button>
+    </div>
+  </footer>
+
+  <script src="home.js"></script>
+</body>
+</html>
