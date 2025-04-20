@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Arts Stream Interactive</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="art.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="header-container">
+      <h1 class="logo"><span>Career</span>Compass</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="../home.html">Home</a></li>
+          <li><a href="#">Career Paths</a></li>
+          <li><a href="../Features/features.html">Features</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="../Aboutus/abt.html">About Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container">
+    <h2>🎨 Arts Stream</h2>
+    <p>Discover diverse and impactful career opportunities available after selecting Arts or Humanities in 11th & 12th.</p>
+
+    <div class="streams">
+
+      <!-- Creative Fields -->
+      <div class="card">
+        <div class="card-header">🎭 Creative & Performing Arts</div>
+
+        <div class="sub-course" onclick="toggleSubCourse(this)">
+          Fine Arts & Design
+          <ul class="exam-list">
+            <li onclick="showBranchDetails('Bachelor of Fine Arts (BFA)')">Bachelor of Fine Arts (BFA)</li>
+            <li onclick="showBranchDetails('Bachelor of Design (B.Des)')">Bachelor of Design (B.Des)</li>
+            <li onclick="showBranchDetails('Animation & Multimedia')">Animation & Multimedia</li>
+          </ul>
+        </div>
+
+        <div class="sub-course" onclick="toggleSubCourse(this)">
+          Performing Arts
+          <ul class="exam-list">
+            <li onclick="showBranchDetails('Music and Dance')">Music and Dance</li>
+            <li onclick="showBranchDetails('Theatre & Drama')">Theatre & Drama</li>
+            <li onclick="showBranchDetails('Film & TV Production')">Film & TV Production</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Analytical & Social Fields -->
+      <div class="card">
+        <div class="card-header">📚 Social Sciences & Law</div>
+
+        <div class="sub-course" onclick="toggleSubCourse(this)">
+          Law & Civil Services
+          <ul class="exam-list">
+            <li onclick="showBranchDetails('BA LLB')">BA LLB</li>
+            <li onclick="showBranchDetails('UPSC/State PSC')">UPSC/State PSC</li>
+            <li onclick="showBranchDetails('Judiciary Exams')">Judiciary Exams</li>
+          </ul>
+        </div>
+
+        <div class="sub-course" onclick="toggleSubCourse(this)">
+          Humanities & Research
+          <ul class="exam-list">
+            <li onclick="showBranchDetails('BA in Psychology/Sociology/History')">BA in Psychology/Sociology/History</li>
+            <li onclick="showBranchDetails('Social Work (BSW/MSW)')">Social Work (BSW/MSW)</li>
+            <li onclick="showBranchDetails('Anthropology/Political Science')">Anthropology/Political Science</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Media, Education, Language -->
+      <div class="card">
+        <div class="card-header">📝 Media, Languages & Education</div>
+
+        <div class="sub-course" onclick="toggleSubCourse(this)">
+          Journalism & Mass Comm.
+          <ul class="exam-list">
+            <li onclick="showBranchDetails('BA Journalism & Mass Comm.')">BA Journalism & Mass Comm.</li>
+            <li onclick="showBranchDetails('Film & Media Studies')">Film & Media Studies</li>
+            <li onclick="showBranchDetails('Content Writing & Digital Media')">Content Writing & Digital Media</li>
+          </ul>
+        </div>
+
+        <div class="sub-course" onclick="toggleSubCourse(this)">
+          Languages & Education
+          <ul class="exam-list">
+            <li onclick="showBranchDetails('BA in English, Hindi, etc.')">BA in English, Hindi, etc.</li>
+            <li onclick="showBranchDetails('Foreign Languages (French, Spanish)')">Foreign Languages (French, Spanish)</li>
+            <li onclick="showBranchDetails('B.Ed / Teaching')">B.Ed / Teaching</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Details Section -->
+  <div class="details-section" id="detailsSection" style="display: none;">
+    <h3 id="detailTitle">Course Details</h3>
+    <div class="detail-content">
+      <p><strong>🎨 What You'll Study:</strong> <span id="studyContent">---</span></p>
+      <p><strong>🎯 Career Paths:</strong> <span id="careerContent">---</span></p>
+      <p><strong>📈 Difficulty:</strong> <span id="difficultyContent">---</span></p>
+      <p><strong>⏳ Duration:</strong> <span id="durationContent">---</span></p>
+    </div>
+  </div>
+
+  <script src="art.js"></script>
+</body>
+</html>

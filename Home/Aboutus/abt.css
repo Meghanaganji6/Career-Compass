@@ -1,0 +1,277 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  body {
+    background-color: #f7f7f7;
+    color: #333;
+  }
+  
+
+   /* Header */
+   header {
+    background-color: #404244;
+    padding: 20px 10%;
+    color: rgb(138, 195, 245);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-left: -40px;
+  }
+  
+  .logo span {
+    color:palevioletred
+  }
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+  }
+  
+  .nav-links li a {
+    color: rgb(251, 250, 250);
+    text-decoration: none;
+    font-weight: 600;
+  }
+  
+  .nav-links li a:hover {
+    text-decoration: underline;
+  }
+
+
+  .about-hero {
+    background-image: url('https://images.unsplash.com/photo-1503676260728-1c00da094a0b'); /* Replace with your image */
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 50px 10%;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .about-left {
+    flex: 1;
+    color: white;
+    max-width: 50%; /* This keeps the text to half of the container */
+    padding-right: 40px;
+  }
+  
+  .about-left h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .about-left p {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+  
+  
+  
+  .about-story {
+    background-color: #fff;
+    padding: 60px 10%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .story-box {
+    background-color: #f1f1f1;
+    padding: 30px;
+    border-radius: 8px;
+    max-width: 900px;
+    text-align: center;
+  }
+  
+  .story-box h4 {
+    color: #ff5a3c;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .story-box h2 {
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .story-box p {
+    font-size: 17px;
+    color: #444;
+    line-height: 1.6;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .overlay {
+      flex-direction: column;
+      padding: 30px 5%;
+    }
+  
+    .about-left, .about-right {
+      padding: 20px 0;
+    }
+  
+    .about-left h1 {
+      font-size: 36px;
+    }
+  }
+  
+
+  /* Footer Styling */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background: #222;
+    color: white;
+    padding: 0px;
+    flex-wrap: wrap;
+    font-size: 0.7rem; /* Reduced overall text size */
+}
+
+.footer div {
+    flex: 1;
+    padding: 10px;
+}
+
+/* Left Section */
+.footer-left h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+
+.footer-left span {
+    color: #67dbed;
+}
+
+.contact-footer h3 {
+    margin-top: 15px;
+}
+
+.cta-button {
+    background: hwb(200 0% 0%);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 0.7rem;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.cta-button:hover {
+    background: hsl(237, 100%, 45%);
+}
+
+/* Center Section - Social Media */
+.footer-center {
+    text-align: center;
+    margin-right: 20px;
+}
+
+.social-icons {
+    margin-top: 10px;
+    font-size: 40px;
+}
+
+.social-icons a {
+    color: rgb(211, 202, 202);
+    font-size: 20px;
+    margin: 0 10px;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    color: rgb(0, 110, 255);
+}
+
+/* Right Section - Feedback */
+.footer-feedback textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: none;
+    resize: none;
+    font-size: 0.7rem;
+}
+
+.footer-feedback button {
+    display: block;
+    margin-top: 10px;
+    width: 20%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer div {
+        padding: 10px 0;
+    }
+
+    .cta-button {
+        width:100%;
+}
+}
+  
+  /* Responsive */
+  @media screen and (max-width: 768px) {
+    .header-container,
+    .footer-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .nav-links {
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 15px;
+    }
+  
+    .buttons button {
+      display: block;
+      width: 80%;
+      margin: 10px auto;
+    }
+  }
+  
+  
+  .main-wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  

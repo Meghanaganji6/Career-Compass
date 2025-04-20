@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Science Stream Interactive</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!-- Link to External CSS File -->
+  <link rel="stylesheet" href="sci.css">
+</head>
+<body>
+
+   <!-- Header -->
+   <header>
+    <div class="header-container">
+      <h1 class="logo"><span>Career</span>Compass</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="../home.html">Home</a></li>
+          <li><a href="#">Career Paths</a></li>
+          <li><a href="../Features/features.html">Features</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="../Aboutus/abt.html">About Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container">
+    <h2>🔬 Science Stream</h2>
+    <p>Explore your path after choosing PCM or PCB — dive into sub-courses and their specializations.</p>
+
+    <div class="streams">
+
+      <!-- PCM Card -->
+      <div class="card">
+        <div class="card-header">📘 PCM (Engineering Path)</div>
+
+        <div class="sub-course" onclick="toggleSubCourse(this)">
+          Engineering
+          <ul class="exam-list">
+            <li onclick="showBranchDetails('Computer Science & Engineering (CSE)')">Computer Science & Engineering (CSE)</li>
+            <li onclick="showBranchDetails('Electronics & Communication (ECE)')">Electronics & Communication (ECE)</li>
+            <li onclick="showBranchDetails('Artificial Intelligence & Machine Learning (AIML)')">Artificial Intelligence & Machine Learning (AIML)</li>
+            <li onclick="showBranchDetails('Mechanical Engineering')">Mechanical Engineering</li>
+            <li onclick="showBranchDetails('Civil Engineering')">Civil Engineering</li>
+            <li onclick="showBranchDetails('Information Technology')">Information Technology</li>
+            <li onclick="showBranchDetails('Electrical Engineering')">Electrical Engineering</li>
+          </ul>
+        </div>
+
+        <div class="sub-course" onclick="toggleSubCourse(this)">
+          Architecture
+          <ul class="exam-list">
+            <li onclick="showBranchDetails('Bachelor of Architecture (B.Arch)')">Bachelor of Architecture (B.Arch)</li>
+            <li onclick="showBranchDetails('Urban Planning')">Urban Planning</li>
+            <li onclick="showBranchDetails('Interior Design')">Interior Design</li>
+          </ul>
+        </div>
+
+        <div class="sub-course" onclick="toggleSubCourse(this)">
+          Defence (NDA)
+          <ul class="exam-list">
+            <li onclick="showBranchDetails('Army (Technical & Non-Technical)')">Army (Technical & Non-Technical)</li>
+            <li onclick="showBranchDetails('Navy (Executive, Engineering, Electrical)')">Navy (Executive, Engineering, Electrical)</li>
+            <li onclick="showBranchDetails('Air Force (Flying Branch, Ground Duty)')">Air Force (Flying Branch, Ground Duty)</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- PCB Card -->
+      <div class="card">
+        <div class="card-header">📗 PCB (Medical Path)</div>
+
+        <div class="sub-course" onclick="toggleSubCourse(this)">
+          Medical (MBBS/BDS)
+          <ul class="exam-list">
+            <li onclick="showBranchDetails('MBBS (General Medicine)')">MBBS (General Medicine)</li>
+            <li onclick="showBranchDetails('BDS (Dental Surgery)')">BDS (Dental Surgery)</li>
+            <li onclick="showBranchDetails('Ayurveda (BAMS)')">Ayurveda (BAMS)</li>
+            <li onclick="showBranchDetails('Homeopathy (BHMS)')">Homeopathy (BHMS)</li>
+            <li onclick="showBranchDetails('Veterinary Science (BVSc)')">Veterinary Science (BVSc)</li>
+          </ul>
+        </div>
+
+        <div class="sub-course" onclick="toggleSubCourse(this)">
+          Pharmacy
+          <ul class="exam-list">
+            <li onclick="showBranchDetails('Bachelor of Pharmacy (B.Pharm)')">Bachelor of Pharmacy (B.Pharm)</li>
+            <li onclick="showBranchDetails('Diploma in Pharmacy (D.Pharm)')">Diploma in Pharmacy (D.Pharm)</li>
+            <li onclick="showBranchDetails('Pharmaceutical Chemistry')">Pharmaceutical Chemistry</li>
+          </ul>
+        </div>
+
+        <div class="sub-course" onclick="toggleSubCourse(this)">
+          Nursing
+          <ul class="exam-list">
+            <li onclick="showBranchDetails('B.Sc Nursing')">B.Sc Nursing</li>
+            <li onclick="showBranchDetails('General Nursing and Midwifery (GNM)')">General Nursing and Midwifery (GNM)</li>
+            <li onclick="showBranchDetails('Auxiliary Nursing and Midwifery (ANM)')">Auxiliary Nursing and Midwifery (ANM)</li>
+          </ul>
+        </div>
+
+        <div class="sub-course" onclick="toggleSubCourse(this)">
+          Biotech & Life Sciences
+          <ul class="exam-list">
+            <li onclick="showBranchDetails('B.Sc Biotechnology')">B.Sc Biotechnology</li>
+            <li onclick="showBranchDetails('B.Sc Microbiology')">B.Sc Microbiology</li>
+            <li onclick="showBranchDetails('B.Sc Genetics')">B.Sc Genetics</li>
+            <li onclick="showBranchDetails('B.Sc Life Sciences')">B.Sc Life Sciences</li>
+          </ul>
+        </div>
+
+      </div>
+
+    </div>
+    
+  </div>
+  <!-- Details Section -->
+  <div class="details-section" id="detailsSection" style="display: none;">
+    <h3 id="detailTitle">Course Details</h3>
+    <div class="detail-content">
+      <p><strong>📘 What You'll Study:</strong> <span id="studyContent">---</span></p>
+      <p><strong>🎯 Career Paths:</strong> <span id="careerContent">---</span></p>
+      <p><strong>📈 Difficulty:</strong> <span id="difficultyContent">---</span></p>
+      <p><strong>⏳ Duration:</strong> <span id="durationContent">---</span></p>
+    </div>
+  </div>
+  
+ 
+
+  <!-- Link to External JS File -->
+  <script src="sci.js"></script>
+
+</body>
+</html>

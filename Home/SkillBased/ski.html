@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Skill-Based Stream Interactive</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="ski.css"> <!-- Using same sci.css for consistent theme -->
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="header-container">
+      <h1 class="logo"><span>Career</span>Compass</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="../home.html">Home</a></li>
+          <li><a href="#">Career Paths</a></li>
+          <li><a href="../Features/features.html">Features</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="../Aboutus/abt.html">About Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container">
+    <h2>🎨 Skill-Based Stream</h2>
+    <p>Explore a range of exciting careers and specializations available after choosing a skill-based stream.</p>
+
+    <div class="streams">
+      <!-- Creative Arts -->
+      <div class="card">
+        <div class="card-header">🎭 Creative Arts</div>
+
+        <div class="sub-course" onclick="toggleSubCourse(this)">
+          Visual Arts
+          <ul class="exam-list">
+            <li onclick="showBranchDetails('Bachelor of Fine Arts (BFA)')">Bachelor of Fine Arts (BFA)</li>
+            <li onclick="showBranchDetails('Graphic Designing')">Graphic Designing</li>
+            <li onclick="showBranchDetails('Animation and Multimedia')">Animation and Multimedia</li>
+          </ul>
+        </div>
+
+        <div class="sub-course" onclick="toggleSubCourse(this)">
+          Performing Arts
+          <ul class="exam-list">
+            <li onclick="showBranchDetails('Bachelor of Performing Arts')">Bachelor of Performing Arts</li>
+            <li onclick="showBranchDetails('Dance and Choreography')">Dance and Choreography</li>
+            <li onclick="showBranchDetails('Music Production')">Music Production</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Technology & IT -->
+      <div class="card">
+        <div class="card-header">💻 Technology & IT</div>
+
+        <div class="sub-course" onclick="toggleSubCourse(this)">
+          Software Development
+          <ul class="exam-list">
+            <li onclick="showBranchDetails('Bachelor of Computer Application (BCA)')">Bachelor of Computer Application (BCA)</li>
+            <li onclick="showBranchDetails('Bachelor of Technology (B.Tech)')">Bachelor of Technology (B.Tech)</li>
+            <li onclick="showBranchDetails('Software Engineering')">Software Engineering</li>
+          </ul>
+        </div>
+
+        <div class="sub-course" onclick="toggleSubCourse(this)">
+          Digital Marketing
+          <ul class="exam-list">
+            <li onclick="showBranchDetails('Digital Marketing & SEO')">Digital Marketing & SEO</li>
+            <li onclick="showBranchDetails('Social Media Marketing')">Social Media Marketing</li>
+          </ul>
+        </div>
+
+        <div class="sub-course" onclick="toggleSubCourse(this)">
+          Web Development
+          <ul class="exam-list">
+            <li onclick="showBranchDetails('Full Stack Web Development')">Full Stack Web Development</li>
+            <li onclick="showBranchDetails('Front-end Web Development')">Front-end Web Development</li>
+            <li onclick="showBranchDetails('Back-end Web Development')">Back-end Web Development</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Hospitality & Event Management -->
+      <div class="card">
+        <div class="card-header">🍽️ Hospitality & Event Management</div>
+
+        <div class="sub-course" onclick="toggleSubCourse(this)">
+          Event Planning & Management
+          <ul class="exam-list">
+            <li onclick="showBranchDetails('Event Management')">Event Management</li>
+            <li onclick="showBranchDetails('Wedding Planning')">Wedding Planning</li>
+          </ul>
+        </div>
+
+        <div class="sub-course" onclick="toggleSubCourse(this)">
+          Hospitality Management
+          <ul class="exam-list">
+            <li onclick="showBranchDetails('Bachelor of Hotel Management')">Bachelor of Hotel Management</li>
+            <li onclick="showBranchDetails('Bachelor of Tourism Studies')">Bachelor of Tourism Studies</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Details Section -->
+  <div class="details-section" id="detailsSection" style="display: none;">
+    <h3 id="detailTitle">Course Details</h3>
+    <div class="detail-content">
+      <p><strong>📘 What You'll Study:</strong> <span id="studyContent">---</span></p>
+      <p><strong>🎯 Career Paths:</strong> <span id="careerContent">---</span></p>
+      <p><strong>📈 Difficulty:</strong> <span id="difficultyContent">---</span></p>
+      <p><strong>⏳ Duration:</strong> <span id="durationContent">---</span></p>
+    </div>
+  </div>
+
+  <script src="ski.js"></script>
+</body>
+</html>

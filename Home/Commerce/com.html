@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Commerce Stream Interactive</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="com.css"> <!-- Using same sci.css for consistent theme -->
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="header-container">
+      <h1 class="logo"><span>Career</span>Compass</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="../home.html">Home</a></li>
+          <li><a href="#">Career Paths</a></li>
+          <li><a href="../Features/features.html">Features</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="../Aboutus/abt.html">About Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container">
+    <h2>📊 Commerce Stream</h2>
+    <p>Explore a range of exciting careers and specializations available after choosing Commerce in 11th & 12th.</p>
+
+    <div class="streams">
+
+      <!-- With Math -->
+      <div class="card">
+        <div class="card-header">📘 Commerce with Math</div>
+
+        <div class="sub-course" onclick="toggleSubCourse(this)">
+          Professional Degrees
+          <ul class="exam-list">
+            <li onclick="showBranchDetails('Chartered Accountancy (CA)')">Chartered Accountancy (CA)</li>
+            <li onclick="showBranchDetails('Company Secretary (CS)')">Company Secretary (CS)</li>
+            <li onclick="showBranchDetails('Cost and Management Accountancy (CMA)')">Cost and Management Accountancy (CMA)</li>
+          </ul>
+        </div>
+
+        <div class="sub-course" onclick="toggleSubCourse(this)">
+          Business & Management
+          <ul class="exam-list">
+            <li onclick="showBranchDetails('BBA (Bachelor of Business Administration)')">BBA (Bachelor of Business Administration)</li>
+            <li onclick="showBranchDetails('BBM (Bachelor of Business Management)')">BBM (Bachelor of Business Management)</li>
+            <li onclick="showBranchDetails('MBA (Masters in Business Administration)')">MBA (Masters in Business Administration)</li>
+          </ul>
+        </div>
+
+        <div class="sub-course" onclick="toggleSubCourse(this)">
+          Economics & Finance
+          <ul class="exam-list">
+            <li onclick="showBranchDetails('BA/B.Sc Economics')">BA/B.Sc Economics</li>
+            <li onclick="showBranchDetails('Bachelor of Finance and Investment Analysis')">Bachelor of Finance and Investment Analysis</li>
+            <li onclick="showBranchDetails('Actuarial Science')">Actuarial Science</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Without Math -->
+      <div class="card">
+        <div class="card-header">📗 Commerce without Math</div>
+
+        <div class="sub-course" onclick="toggleSubCourse(this)">
+          Accounting & Taxation
+          <ul class="exam-list">
+            <li onclick="showBranchDetails('B.Com General')">B.Com General</li>
+            <li onclick="showBranchDetails('B.Com Accounting & Taxation')">B.Com Accounting & Taxation</li>
+            <li onclick="showBranchDetails('Tax Consultant')">Tax Consultant</li>
+          </ul>
+        </div>
+
+        <div class="sub-course" onclick="toggleSubCourse(this)">
+          Hospitality & Tourism
+          <ul class="exam-list">
+            <li onclick="showBranchDetails('Bachelor of Hotel Management')">Bachelor of Hotel Management</li>
+            <li onclick="showBranchDetails('Tourism Studies')">Tourism Studies</li>
+          </ul>
+        </div>
+
+        <div class="sub-course" onclick="toggleSubCourse(this)">
+          Law & Education
+          <ul class="exam-list">
+            <li onclick="showBranchDetails('BA LLB')">BA LLB</li>
+            <li onclick="showBranchDetails('B.Ed (Bachelor of Education)')">B.Ed (Bachelor of Education)</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Details Section -->
+  <div class="details-section" id="detailsSection" style="display: none;">
+    <h3 id="detailTitle">Course Details</h3>
+    <div class="detail-content">
+      <p><strong>📘 What You'll Study:</strong> <span id="studyContent">---</span></p>
+      <p><strong>🎯 Career Paths:</strong> <span id="careerContent">---</span></p>
+      <p><strong>📈 Difficulty:</strong> <span id="difficultyContent">---</span></p>
+      <p><strong>⏳ Duration:</strong> <span id="durationContent">---</span></p>
+    </div>
+  </div>
+
+  <script src="com.js"></script>
+</body>
+</html>

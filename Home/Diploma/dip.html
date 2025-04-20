@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Diploma Stream Interactive</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="dip.css"> <!-- Using same css for consistency -->
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="header-container">
+      <h1 class="logo"><span>Career</span>Compass</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="../home.html">Home</a></li>
+          <li><a href="#">Career Paths</a></li>
+          <li><a href="../Features/features.html">Features</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="../Aboutus/abt.html">About Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container">
+    <h2>⚙️ Diploma Stream</h2>
+    <p>Explore job-oriented diploma courses and skill development options after 10th or 12th.</p>
+
+    <div class="streams">
+
+      <!-- Technical Diplomas -->
+      <div class="card">
+        <div class="card-header">🔧 Technical Diplomas</div>
+
+        <div class="sub-course" onclick="toggleSubCourse(this)">
+          Polytechnic Diplomas
+          <ul class="exam-list">
+            <li onclick="showBranchDetails('Diploma in Mechanical Engineering')">Diploma in Mechanical Engineering</li>
+            <li onclick="showBranchDetails('Diploma in Civil Engineering')">Diploma in Civil Engineering</li>
+            <li onclick="showBranchDetails('Diploma in Computer Science')">Diploma in Computer Science</li>
+          </ul>
+        </div>
+
+        <div class="sub-course" onclick="toggleSubCourse(this)">
+          ITI Trades
+          <ul class="exam-list">
+            <li onclick="showBranchDetails('Electrician')">Electrician</li>
+            <li onclick="showBranchDetails('Fitter')">Fitter</li>
+            <li onclick="showBranchDetails('Welder')">Welder</li>
+          </ul>
+        </div>
+
+        <div class="sub-course" onclick="toggleSubCourse(this)">
+          Engineering Pathways
+          <ul class="exam-list">
+            <li onclick="showBranchDetails('Lateral Entry to B.Tech')">Lateral Entry to B.Tech</li>
+            <li onclick="showBranchDetails('Apprenticeships & Internships')">Apprenticeships & Internships</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Non-Technical Diplomas -->
+      <div class="card">
+        <div class="card-header">🎨 Non-Technical Diplomas</div>
+
+        <div class="sub-course" onclick="toggleSubCourse(this)">
+          Creative & Design Courses
+          <ul class="exam-list">
+            <li onclick="showBranchDetails('Diploma in Fashion Designing')">Diploma in Fashion Designing</li>
+            <li onclick="showBranchDetails('Diploma in Graphic Design')">Diploma in Graphic Design</li>
+            <li onclick="showBranchDetails('Diploma in Animation')">Diploma in Animation</li>
+          </ul>
+        </div>
+
+        <div class="sub-course" onclick="toggleSubCourse(this)">
+          Hospitality & Tourism
+          <ul class="exam-list">
+            <li onclick="showBranchDetails('Diploma in Hotel Management')">Diploma in Hotel Management</li>
+            <li onclick="showBranchDetails('Diploma in Tourism Studies')">Diploma in Tourism Studies</li>
+          </ul>
+        </div>
+
+        <div class="sub-course" onclick="toggleSubCourse(this)">
+          Healthcare & Services
+          <ul class="exam-list">
+            <li onclick="showBranchDetails('Diploma in Nursing Assistant')">Diploma in Nursing Assistant</li>
+            <li onclick="showBranchDetails('Diploma in Medical Lab Technology')">Diploma in Medical Lab Technology</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Details Section -->
+  <div class="details-section" id="detailsSection" style="display: none;">
+    <h3 id="detailTitle">Course Details</h3>
+    <div class="detail-content">
+      <p><strong>📘 What You'll Study:</strong> <span id="studyContent">---</span></p>
+      <p><strong>🎯 Career Paths:</strong> <span id="careerContent">---</span></p>
+      <p><strong>📈 Difficulty:</strong> <span id="difficultyContent">---</span></p>
+      <p><strong>⏳ Duration:</strong> <span id="durationContent">---</span></p>
+    </div>
+  </div>
+
+  <script src="dip.js"></script>
+</body>
+</html>
