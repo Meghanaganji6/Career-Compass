@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Commerce Stream Interactive</title>
+  <title>Vocational Stream Interactive</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  <link rel="stylesheet" href="com.css"> <!-- Using same sci.css for consistent theme -->
+  <link rel="stylesheet" href="voc.css"> <!-- Use sci.css if you want exact theme match -->
 </head>
 <body>
 
@@ -17,14 +17,82 @@
           <li><a href="../home.html">Home</a></li>
           <li><a href="#">Career Paths</a></li>
           <li><a href="../Features/features.html">Features</a></li>
-          <li><a href="#contact">Exams</a></li>
+          <li><a href="../Exam/index.html">Exams</a></li>
           <li><a href="../Aboutus/abt.html">About Us</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  
+  <div class="container">
+    <h2>🛠️ Vocational Stream</h2>
+    <p>Explore skill-oriented career paths and specialized vocational training programs available after school education.</p>
+
+    <div class="streams">
+
+      <!-- Vocational Courses -->
+      <div class="card">
+        <div class="card-header">📗 Vocational Courses</div>
+
+        <div class="sub-course" onclick="toggleSubCourse(this)">
+          Technical & Engineering
+          <ul class="exam-list">
+            <li onclick="showBranchDetails('Diploma in Mechanical Engineering')">Diploma in Mechanical Engineering</li>
+            <li onclick="showBranchDetails('Diploma in Electrical Engineering')">Diploma in Electrical Engineering</li>
+            <li onclick="showBranchDetails('Diploma in Civil Engineering')">Diploma in Civil Engineering</li>
+            <li onclick="showBranchDetails('Diploma in Automobile Engineering')">Diploma in Automobile Engineering</li>
+            <li onclick="showBranchDetails('Diploma in Electronics & Communication')">Diploma in Electronics & Communication</li>
+          </ul>
+        </div>
+
+        <div class="sub-course" onclick="toggleSubCourse(this)">
+          Healthcare & Paramedical
+          <ul class="exam-list">
+            <li onclick="showBranchDetails('Diploma in Medical Lab Technology (DMLT)')">Diploma in Medical Lab Technology (DMLT)</li>
+            <li onclick="showBranchDetails('Diploma in Radiology Technology')">Diploma in Radiology Technology</li>
+            <li onclick="showBranchDetails('Diploma in Operation Theatre Technology')">Diploma in Operation Theatre Technology</li>
+            <li onclick="showBranchDetails('Diploma in Nursing Care Assistant')">Diploma in Nursing Care Assistant</li>
+            <li onclick="showBranchDetails('Diploma in Physiotherapy')">Diploma in Physiotherapy</li>
+          </ul>
+        </div>
+
+        <div class="sub-course" onclick="toggleSubCourse(this)">
+          Agriculture & Food Technology
+          <ul class="exam-list">
+            <li onclick="showBranchDetails('Diploma in Agriculture')">Diploma in Agriculture</li>
+            <li onclick="showBranchDetails('Diploma in Horticulture')">Diploma in Horticulture</li>
+            <li onclick="showBranchDetails('Diploma in Dairy Technology')">Diploma in Dairy Technology</li>
+            <li onclick="showBranchDetails('Diploma in Food Processing')">Diploma in Food Processing</li>
+            <li onclick="showBranchDetails('Diploma in Organic Farming')">Diploma in Organic Farming</li>
+          </ul>
+        </div>
+
+        <div class="sub-course" onclick="toggleSubCourse(this)">
+          Creative & Media
+          <ul class="exam-list">
+            <li onclick="showBranchDetails('Diploma in Graphic Designing')">Diploma in Graphic Designing</li>
+            <li onclick="showBranchDetails('Diploma in Photography')">Diploma in Photography</li>
+            <li onclick="showBranchDetails('Diploma in Animation')">Diploma in Animation</li>
+            <li onclick="showBranchDetails('Diploma in Fashion Designing')">Diploma in Fashion Designing</li>
+            <li onclick="showBranchDetails('Diploma in Interior Designing')">Diploma in Interior Designing</li>
+          </ul>
+        </div>
+
+        <div class="sub-course" onclick="toggleSubCourse(this)">
+          Business & Services
+          <ul class="exam-list">
+            <li onclick="showBranchDetails('Diploma in Office Management')">Diploma in Office Management</li>
+            <li onclick="showBranchDetails('Diploma in Retail Management')">Diploma in Retail Management</li>
+            <li onclick="showBranchDetails('Diploma in Hotel Management')">Diploma in Hotel Management</li>
+            <li onclick="showBranchDetails('Diploma in Event Management')">Diploma in Event Management</li>
+            <li onclick="showBranchDetails('Diploma in Travel and Tourism')">Diploma in Travel and Tourism</li>
+          </ul>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
 
   <!-- Details Section -->
   <div class="details-section" id="detailsSection" style="display: none;">
@@ -37,6 +105,6 @@
     </div>
   </div>
 
-  <script src="com.js"></script>
+  <script src="voc.js"></script>
 </body>
 </html>

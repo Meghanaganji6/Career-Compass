@@ -1,0 +1,185 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  height: 100vh;
+  background: linear-gradient(-45deg, #ff9a9e, #065a5d, #fad0c4, #fbc2eb, #a1c4fd,hwb(165 5% 38%));
+  background-size: 400% 400%;
+  animation: gradientBG 17s ease infinite;
+}
+
+@keyframes gradientBG {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
+}
+
+h1 {
+  font-size: 2em;
+  font-weight: bold;
+  color: white;
+  text-shadow: 2px 2px 5px #6b4c0a; /* darker golden shadow */
+}
+
+.quote {
+  font-style: italic;
+  margin-bottom: 30px;
+  color: #482da0;
+  font-size: 1.4em;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px 20px;
+  justify-items: center;
+  padding: 20px;
+  max-width: 1100px;
+  margin: auto;
+  margin-bottom: 80px;  /* ✅ Added this */
+}
+
+
+.card {
+  width: 250px;
+  height: 200px;
+  perspective: 1000px;
+  transition: transform 0.3s ease;
+}
+
+.card-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.card.flipped .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front, .card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 15px;
+  text-align: center;
+  font-weight: 900;
+  font-size: 1.2em;
+  background-color: rgba(255, 255, 255, 0.25);  /* transparent default */
+  color: black;
+  text-shadow: 1px 1px 3px white;
+  border: 2px solid rgba(255,255,255,0.6);
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+.card-back {
+  font-size: 1em; /* or 0.9em, or any smaller value you want */
+}
+
+
+/* ✅ ON HOVER: glow + solid background */
+/* ON HOVER: glow + light background */
+.card:hover .card-front,
+.card:hover .card-back {
+background-color: rgba(210, 208, 208, 0.85);
+box-shadow: 0 0 15px 3px rgba(255, 255, 255, 0.4);
+}
+
+
+.card-back {
+  transform: rotateY(180deg);
+  line-height: 1.6;
+}
+.click-btn {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 0.9em;
+  padding: 5px 10px;
+  background-color: #007BFF;
+  color: #ece6e6;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.stream-button:hover {
+  background-color: #0056b3;
+}
+/* Move the button below content and style it */
+.card-back a.click-btn {
+display: block;
+text-align: center;
+background-color: rgb(90, 145, 241);  /* 🎨 Change color if you prefer */
+color: rgb(21, 21, 21);
+padding: 8px 15px;
+margin: 10px auto 0;
+border-radius: 8px;
+text-decoration: none;
+font-weight: bold;
+transition: background-color 0.3s ease;
+}
+
+.card-back a.click-btn:hover {
+background-color:  rgb(34, 197, 34);  /* Hover effect */
+}
+.emoji {
+font-size: 2em; /* or try 30px, 40px, etc. */
+vertical-align: middle; /* optional: aligns emoji with text */
+}
+
+
+/* Extend background gradient with 2 more colors */
+
+
+
+
+/* ========== Updated Nav Header ========== */
+header {
+  background-color:#404244;
+  padding: 10px 10%;  /* adjusted padding for balance */
+  color: rgb(138, 195, 245);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-left:-20px;
+}
+.logo span {
+  color: palevioletred;
+}
+.logo .compass {
+  color: #67dbed;  /* ✅ same color as footer blue */
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+.nav-links li a {
+  color: rgb(251, 250, 250);
+  text-decoration: none;
+  font-weight: 600;
+}
+.nav-links li a:hover { 
+  text-decoration: underline;
+}
+

@@ -1,5 +1,5 @@
 function redirect(page) {
-  window.location.href = page;
+  window.location.href = "10th/10.html";
 }
 
 function openStreamForm() {
@@ -24,7 +24,7 @@ function submitStream() {
     science: "Sciencs/sci.html",
     commerce: "Commerce/com.html",
     arts: "Arts/art.html",
-    others: "Others/oth.html",
+    vocational: "Others/voc.html",
     diploma: "Diploma/dip.html",
     skillBased: "SkillBased/ski.html"
   };
